@@ -22,5 +22,4 @@ A collection of frontend exercises featuring infinite scroll and animated text s
 - Same functionality using XHR
 
 
-
-# No dependencies needed - open index.html directly
+#### Downlod it open index1.html directly , it should work. 
