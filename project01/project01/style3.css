@@ -1,0 +1,158 @@
+@font-face {
+    font-family: shabnam;
+    src: url("fonts/Shabnam.woff2") format("woff2");
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #eee;
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 160px;
+    overflow: hidden;
+    font-family: shabnam;
+    font-size: 35px;
+    line-height: 40px;
+    color: #333;
+}
+
+.contentـcontainer {
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+    position: relative;
+}
+
+.contentـcontainer:before {
+    content: '[';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #a01662;
+    font-size: 36px;
+    line-height: 40px;
+    animation: opacity 2s infinite;
+}
+
+.contentـcontainer:after {
+    content: ']';
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #a01662;
+    font-size: 36px;
+    line-height: 40px;
+    animation: opacity 2s infinite;
+}
+
+
+.text {
+    display: inline;
+    float: left;
+    margin: 0;
+}
+
+
+.list {
+    margin-top: 0;
+    padding-left: 110px;
+    text-align: left;
+    list-style: none;
+    animation: change 10s infinite;
+}
+
+.item {
+    line-height: 40px;
+    margin: 0;
+}
+
+
+@keyframes opacity {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes change {
+
+    0%,
+    12.66%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    16.66%,
+    29.32% {
+        transform: translate3d(0, -25%, 0);
+    }
+
+    33.32%,
+    45.98% {
+        transform: translate3d(0, -50%, 0);
+    }
+
+    49.98%,
+    62.64% {
+        transform: translate3d(0, -75%, 0);
+    }
+
+    66.64%,
+    79.3% {
+        transform: translate3d(0, -50%, 0);
+    }
+
+    83.3%,
+    95.96% {
+        transform: translate3d(0, -25%, 0);
+    }
+}
+
+.mainـnav {
+    position: fixed;
+    top: 1;
+    width: 100%;
+    background-color: #eeeeeef7;
+    backdrop-filter: blur;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.mainـnav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1.7rem;
+    margin: 0;
+}
+
+.mainـnav ul li {
+    margin: 0 2rem;
+}
+
+.mainـnav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: shabnam;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.mainـnav ul li a:hover {
+    color: #a90f42;
+}
